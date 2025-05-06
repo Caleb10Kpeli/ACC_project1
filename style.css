@@ -1,0 +1,165 @@
+/* Reset & Font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+  }
+  
+  body {
+    background: hsl(180, 52%, 96%);
+  }
+  
+  .header {
+    height: 150px;
+    background: hsl(180, 29%, 50%);
+    background-image: url('./images/bg-header-desktop.svg');
+    background-size: cover;
+  }
+  
+  .hidden {
+    display: none !important;
+  }
+  
+  /* Job Cards */
+  .job-listings {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .job-card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px hsla(180, 29%, 50%, 0.1);
+    position: relative;
+    border-left: 5px solid hsl(180, 29%, 50%);
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+  .company-logo {
+    width: 88px; 
+    height: 88px; 
+    object-fit: contain; 
+    margin-right: 0; 
+  }
+  .featured {
+    border-left: 5px solid hsl(180, 14%, 20%);
+  }
+  
+  .tags {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-left: auto;
+  }
+  
+  .tags span {
+    background: hsl(180, 52%, 96%);
+    color: hsl(180, 29%, 50%);
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .tags span:hover {
+    background: hsl(180, 29%, 50%);
+    color: white;
+  }
+  
+  /* Filter Bar */
+  .filter-bar {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px hsla(180, 29%, 50%, 0.1);
+    margin: -30px auto 20px;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .filter-tag {
+    background: hsl(180, 52%, 96%);
+    color: hsl(180, 29%, 50%);
+    padding: 5px 10px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .filter-tag button {
+    background: hsl(180, 29%, 50%);
+    border: none;
+    color: white;
+    margin-left: 8px;
+    padding: 2px 5px;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+  }
+  
+  .clear-btn {
+    background: none;
+    border: none;
+    color: hsl(180, 29%, 50%);
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .clear-btn:hover {
+    text-decoration: underline;
+  }
+  
+  /* Badges */
+  .company span.new,
+  .company span.featured-tag {
+    color: white;
+    padding: 5px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-left: 10px;
+  }
+  
+  .company span.new {
+    background: hsl(180, 29%, 50%);
+  }
+  
+  .company span.featured-tag {
+    background: hsl(180, 14%, 20%);
+  }
+  
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    .header {
+      background-image: url('./images/bg-header-mobile.svg');
+    }
+  
+    .job-card {
+      flex-direction: column;
+      align-items: flex-start;
+      padding-top: 40px;
+    }
+  
+    .tags {
+      width: 100%;
+      margin-top: 15px;
+      padding-top: 15px;
+      border-top: 1px solid hsl(180, 8%, 72%);
+    }
+  
+    .filter-bar {
+      padding: 10px;
+      margin: -20px 15px 20px;
+    }
+  }
