@@ -1,23 +1,32 @@
-# Static Job Listings - Frontend Mentor Challenge
+# Static Job Listings – Frontend Mentor Challenge
 
-A responsive job listing page with filtering functionality, built with:
-
-- HTML5
-- CSS3 (Flexbox/Grid)
-- JavaScript (ES6)
+A **responsive job listing page** with dynamic filtering functionality.
 
 ## Features
-- Filter jobs by role, level, languages, or tools
-- Mobile-first responsive design
-- Interactive tag selection
+- Filter job listings by **role**, **level**, **languages**, or **tools**
+- Interactive tag-based filtering system
+- **Mobile-first design** using Flexbox & CSS Grid
+- Clean and accessible UI
+
+## Built With
+- HTML5
+- CSS3 (Flexbox, Grid)
+- JavaScript (ES6)
 
 ## How to Run
 1. Clone this repository
 2. Open `index.html` in any modern browser
 
-## Submission
-- Repository: [ACC_project1](https://github.com/Caleb10Kpeli/ACC_project1.git)
+## Folder Structure
+project/
+├── index.html
+├── style.css
+├── script.js
+├── images/
+└── README.md
 
 ## Credits
 - Challenge by [Frontend Mentor](https://www.frontendmentor.io)
-- Developed by [Caleb Kpeli]
+- Developed by [Caleb Kpeli](https://github.com/Caleb10Kpeli)
+
+
